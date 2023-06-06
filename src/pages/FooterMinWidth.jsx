@@ -28,7 +28,10 @@ const FooterMinWidth = () => {
                     <FaRegEnvelope size={30} color='black'/>
                     <p>Contact</p>
                   </div>
-                  <div>
+                  <div onClick={()=>{
+                    window.location.replace(`https://www.google.com/maps/place/%C3%89glise+d'Identification+Chr%C3%A9tienne+de+Gatineau/@45.4677381,-75.7421527,17z/data=!4m6!3m5!1s0x4cce1db8d7274241:0x2747f95f23616f1b!8m2!3d45.4677381!4d-75.7421527!16s%2Fg%2F11sfwsshkx?authuser=1&entry=ttu`);
+                    setOpen(false);
+                  }}>
                     <CiLocationOn size={30} color='black'/>
                     <p>Plan</p>
                   </div>
@@ -54,7 +57,10 @@ const FooterMinWidth = () => {
                       }} className='footerOpenplusdiv1'>Nous Contacter</div>
 
                       <h1 >Église d'Identification Chrétienne de Gatineau</h1>
-                      <p >69 rue Jean-Proulx suite 202Gatineau, QCJ8Z 1W2</p>
+                      <p onClick={()=>{
+                        window.location.replace(`https://www.google.com/maps/place/%C3%89glise+d'Identification+Chr%C3%A9tienne+de+Gatineau/@45.4677381,-75.7421527,17z/data=!4m6!3m5!1s0x4cce1db8d7274241:0x2747f95f23616f1b!8m2!3d45.4677381!4d-75.7421527!16s%2Fg%2F11sfwsshkx?authuser=1&entry=ttu`);
+                        setOpen(false);
+                    }}>69 rue Jean-Proulx suite 202Gatineau, QCJ8Z 1W2</p>
                       <div className='footerTel' >
                         <div >438-722-0169</div>
                         <div >819-307-6812</div>
@@ -64,7 +70,10 @@ const FooterMinWidth = () => {
                       </div>
                       <div className='footerLogocontact'>
                         <FaFacebook className="footericon" size={25} color='blue'/>
-                        <SiGooglemaps className="footericon" size={25} color='darkblue'/>
+                        <SiGooglemaps onClick={()=>{
+                          window.location.replace(`https://www.google.com/maps/place/%C3%89glise+d'Identification+Chr%C3%A9tienne+de+Gatineau/@45.4677381,-75.7421527,17z/data=!4m6!3m5!1s0x4cce1db8d7274241:0x2747f95f23616f1b!8m2!3d45.4677381!4d-75.7421527!16s%2Fg%2F11sfwsshkx?authuser=1&entry=ttu`);
+                            setOpen(false);
+                          }} className="footericon" size={25} color='darkblue'/>
                         <FaYoutube className="footericon" size={25} color='red'/>
                       </div>
                     </div>
