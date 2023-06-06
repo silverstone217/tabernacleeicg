@@ -1,38 +1,445 @@
-.App {
-  text-align: center;
-}
+*{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*pc*/
+@media screen and (min-width: 768px){
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:darkblue; 
+  }
+  .App {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    
+  }
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    flex: 1;
+    align-items: center;
+    width: 100vw;
+    background-color: white;
+    height: 8.1%;
+    transition: opacity 0.5s;
+    animation: slide 4s;
+    padding: 10px;
+    z-index: 1;
+  }
+  .headerLeft, .headerCenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .headerLeft{
+    margin-left: -1rem;
+    width: 22%;
+    margin-left: 1rem;
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .headerLeft{
+    cursor: pointer;
+  }
+  .imgIcon{
+    width: 25%;
+    height: auto;
+    margin-left: -10px;
+    transition: all 1s;
+  }
+  .imgIcon:hover{
+    transition: all 1s;
+    margin-left: 10px;
+    /*animation: shake 0.5s;*/
+  }
+  .headerText{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    word-wrap: break-word;
+  }
+  .headerCenter{ 
+    width: 40%;
+    justify-content: space-around;
+    font-size: 18px;
+    align-items: center;
+    margin-right: 20%;
+    height: 100%;
+  }
+  .active, .headerLink{
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.5s;
+  }
+  .active, .headerLink:hover{
+   cursor: pointer;
+   background-color: black;
+   color: white;
+  }
+  .headerLink:active{
+    background-color: black;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /*footer*/
+  footer {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    width: 100%;
+    justify-content: space-around;
+    
+  }
+  footer > aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer > .leftfooter{
+    width: 50%;
+  }
+
+  footer > aside > h1{
+    border-bottom: 1px solid black;
+    
+  }.footerdiv1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footerdiv2{
+   display: grid;
+   grid-template: 1fr 1fr;
+   grid-template-rows: repeat(3, 1fr);
+   grid-gap: 10px;
+   grid-auto-flow: dense;
+   margin-bottom: 15px;
+  }
+  .footerdiv2 > div{
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    transition: all 1s
+  }
+  .footerdiv2 > div:hover, .footerdiv1:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: all 1s ;
+  }
+  .footertext1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .footertext2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .footertext3{
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .footertext4{
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .footertext5{
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  .centerfooter > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  .centerfooter > div:hover{
+    cursor: pointer;
+  }
+  .rightfooter > div{
+    display: grid;
+    grid-template: 1fr 1fr;
+    grid-template-rows: repeat(2, 2fr);
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .rightfootertext1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .rightfootertext2{
+    grid-row: 1/2;
+    grid-column: 2/2;
+  }
+  .rightfootertext3{
+    grid-row: 2/2;
+    grid-column: 1/2;
+  }
+  .rightfootertext4{
+    grid-row: 2/2;
+    grid-column: 2/2;
+  }
+  .rightfootertext1:hover, .rightfootertext2:hover, .rightfootertext3:hover, .rightfootertext4:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: all 1s ;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*phone*/
+@media screen and (max-width: 768px){
+  .App {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+  }
+ 
+  .header{
+    width: 100%;
+    background-color: white;
+    animation: slide 4s;
+    transition: all 1s;
+    position: fixed;
+    height: 11%;
+    top: 0;
+  }
+  .header > img{
+    transition: all 1s;
+  }
+  .header > img:hover{
+    transition: all 1s;
+    width: 110px !important;
+    cursor: pointer;
+  }
+ 
+  .footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color:white;
+    height: 10%;
+    
+  }
+  .openfooterPlus{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    justify-content: space-around;
+
+  }
+  .footerOpen{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color:white;
+    height: 80%;
+    
+  }
+  .footerOpenplus{
+    display: flex;
+    align-self: flex-start;
+    padding: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem !important;
+    justify-content: space-between;
+    margin-top: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 95%;
+    height: 100%;
+    word-break: break-all;
+  }
+  
+  .footerOpenplus > .footerOpenplusdiv1{
+    transition: all 1s ;
+    width: 200px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 17px;
+    border-bottom: 1px solid gainsboro;
+  }
+  .footerOpenplus > .footerOpenplusdiv1:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: all 1s ;
+  }
+  footer >.footerIcon{ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: crimson !important;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    
+  }
+  footer >.footerIcon>.footerIcon1{
+    display: flex;
+    width: 60%;
+    margin-left: -5%;
+    background-color: white !important;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer >.footerIcon>.footerIcon1>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+  .footerIcon1 > div:hover {
+    cursor: pointer;
+    background-color: darkblue !important;
+  }
+  .footerIcon1 > div > p{
+    margin-top: -2px;
+    font-size: 14px;
+  }
+  .footerIcon2{
+    background-color: crimson;
+    color: white;
+    align-self: center;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid transparent;
+  }
+  .footerIcon2:hover{
+    cursor: pointer;
+  }
+  .footerOpenplus > h1{
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: -1rem;
+  }
+  .footerOpenplus > p{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: -1rem;
+    margin-top: -0.5rem;
+  }
+  .footerTel{
+    width: 65%;
+    display: grid;
+    grid: 40px / auto auto auto;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3px;
+    justify-content: center;
+  }
+  .footerTel > div{
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 25px;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+  }
+  .footerLogocontact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+  }
+  .footerLogocontact > .footericon:hover{
+    cursor: pointer;
+    background-color: gainsboro !important;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+/*@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}*/
+
+@keyframes slide{
+ from
+ { transform: translateY(-100%);
+  opacity: 0;
+}
+ to {
+   transform: translateY(0);
+   opacity: 1;
+};
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

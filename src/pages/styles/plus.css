@@ -1,0 +1,406 @@
+/*pc*/
+@media screen and (min-width: 768px){
+    .plus{
+        color: black;
+        position: relative;
+        margin-top: 4%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        scroll-behavior: smooth !important;
+        scroll-padding: 20rem;
+        overflow-x: hidden;
+        height: 100vh;
+        overflow-y: auto;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+    .plus > section:first-child, .plus > section:nth-child(2){
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionPlus1>h1{
+        color: white;
+        font-size: 37px;
+        background-image: url('../../images/Christ1.jpg');
+        background-position: center;
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-image 1s;
+        animation:backgroundchange 30s alternate infinite ;
+    }
+    .sectionPlus2{
+        margin-top: -6rem;
+    }
+    .sectionPlus2 > h1{
+        align-self: center;
+        color: black;
+        display: flex;
+        width: 70%;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        font-size: 38.5px;
+        background-color: white;
+    }
+    .sectionPlus2 > div{
+        display: flex;
+        justify-content: space-around;
+        color: #000;
+        text-align: left;
+    }
+    .sectionPlus2 > div > aside {
+        display: flex;
+        flex-direction: column;
+    }
+    .plusnumber{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .plusnumber > p{
+        margin-bottom: -10px;
+        font-size: 22px;
+        transition: all 1s;
+    }
+    .plusnumber > p:last-child{
+        border: 1px solid black;
+        padding: 5px;
+        margin-bottom: 1rem;
+    }
+    .plusnumber > p:last-child:hover{
+        cursor: pointer;
+        color: white;
+        background-color: #000;
+        transition: all 1s;
+    }
+    .sectionPlus2aside1 > div > h2:first-child{
+        text-align: left;
+        display: flex;
+        width: auto;
+        font-size: 25px !important;
+        margin-bottom: -10px;
+        
+    }
+    .sectionPlus2aside1 > div > h2:nth-child(2){
+        font-weight: 400;
+        margin-bottom: -10px;
+    }
+    .sectionPlus2aside1 > div > h2:last-child{
+        font-weight: 400;
+        transition: all 1s;
+        animation:moveX 6s alternate infinite ;
+    }
+
+    .sectionPlus3{
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        background-color: gainsboro !important;
+        text-align: left;
+    }
+    .sectionPlus3>aside{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    .sectionPlus3>aside>img{
+        margin-top: 9.5%;
+    }
+    .plus p{
+        font-size: 17px !important;
+        font-weight: 500;
+    }
+    .sectionPlus3>aside>h1{
+        font-weight: 600;
+        font-size: 22px !important;
+        margin-bottom: -5px;
+        
+    }
+    .sectionPlus3>aside>h2{
+        font-weight: 400;
+        transition: all 1s;
+        animation:moveX 6s alternate infinite ;
+    }
+    .sectionPlus4{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: white !important;
+        text-align: left;
+    }
+    .sectionPlus4>aside{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+    }
+    .sectionPlus4>aside:last-child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sectionPlus4>aside:last-child>img{
+        width: 600px;
+        transition: all 1s ;
+
+    }
+    .sectionPlus4>aside:last-child>img:hover{
+        width: 590px !important;
+        transition: all 1s ;
+    }
+    .sectionPlus4>aside:last-child>h3{
+        font-style: italic;
+        transition: all 1s;
+        animation:moveX 6s alternate infinite ;
+    }
+    .sectionPlus4>aside:first-child{
+        width: 40%;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+    }
+    .sectionPlus4>aside:first-child>h1{
+        font-size: 22px !important;
+        margin-bottom: -10px;
+        text-align: left;
+    }
+    .sectionPlus4>aside:first-child>h2{
+        font-weight: 500;
+        margin-bottom: -10px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .plus{
+        height: 100%;
+        height: 100%;
+        margin-top: 10%;
+        font-size: 16px;
+        display: flex;
+        color: black; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        border-bottom: 1px solid gainsboro;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+    .plus > section:first-child, .plus > section:nth-child(2){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionPlus1>h1{
+        color: white;
+        font-size: 25px;
+        background-image: url('../../images/Christ1.jpg');
+        background-position: center;
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-image 1s;
+        animation:backgroundchange 30s alternate infinite ;
+    }
+    .sectionPlus2{
+        margin-top: -5rem;
+    }
+    .sectionPlus2 > h1{
+        align-self: center;
+        color: black;
+        display: flex;
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        height: 50px;
+        background-color: white;
+    }
+    .sectionPlus2 > div{
+        display: flex;
+        justify-content: space-around;
+        color: #000;
+        flex-direction: column;
+    }
+    .sectionPlus2 > div > aside {
+        display: flex;
+        flex-direction: column;
+    }
+    .plusnumber{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .plusnumber > p{
+        margin-bottom: -10px;
+        font-size: 18px;
+        transition: all 1s;
+    }
+    .plusnumber > p:last-child{
+        border: 1px solid black;
+        padding: 5px;
+        margin-bottom: 1rem;
+    }
+    .plusnumber > p:last-child:hover{
+        cursor: pointer;
+        color: white;
+        background-color: #000;
+        transition: all 1s;
+    }
+    .sectionPlus2aside1 > div > h2:first-child{
+        width: auto;
+        font-size: 19px !important;
+        margin-bottom: -10px;
+        
+    }
+    .sectionPlus2aside1 > div > h2:nth-child(2){
+        font-weight: 400;
+        font-size: 19px !important;
+        margin-bottom: -10px;
+    }
+    .sectionPlus2aside1 > div > h2:last-child{
+        font-weight: 400;
+        font-size: 17.5px !important;
+        transition: all 1s;
+        animation:moveX 6s alternate infinite ;
+    }
+    .sectionPlus3{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: gainsboro !important;
+        text-align: center;
+    }
+    .sectionPlus3>aside{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionPlus3>aside>h1{
+        font-weight: 600;
+        font-size: 18px !important;
+        margin-bottom: -5px;
+        
+    }
+    .sectionPlus3>aside>h2{
+        font-weight: 400;
+        transition: all 1s;
+        animation:moveX 6s alternate infinite ;
+    }
+    .sectionPlus4{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: white !important;
+        text-align: center;
+    }
+    .sectionPlus4>aside{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionPlus4>aside:last-child{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    .sectionPlus4>aside:last-child>img{
+        transition: all 1s ;
+        width: auto;
+        height: 321px;
+        margin-top: -1rem;
+
+    }
+    .sectionPlus4>aside:last-child>h3{
+        font-style: italic;
+        transition: all 1s;
+        animation:moveX 6s alternate infinite ;
+    }
+    .sectionPlus4>aside:first-child{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .sectionPlus4>aside:first-child>h1{
+        font-size: 18px !important;
+        margin-bottom: -10px;
+        text-align: left;
+    }
+    .sectionPlus4>aside:first-child>h2{
+        ont-size: 18px !important;
+        font-weight: 500;
+        margin-bottom: -10px;
+    }
+}
+
+
+
+
+@keyframes backgroundchange{
+    0%, 33.33%{
+        background-image: url('../../images/Christ1.jpg');
+        background-position: center;
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        transition: background-image 1s;
+        animation:shrink 5s alternate infinite ;
+    }
+    33.34%, 66.66%{
+        background-image: url('../../images/bible.jpg');
+        background-position: center;
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        transition: background-image 1s;
+        animation:shrink 5s alternate infinite ;
+    }
+    66.67%,100%{
+        background-image: url('../../images/eagle.jpg');
+        background-position: center;
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        transition: background-image 1s;
+        animation:shrink 5s alternate infinite ;
+    }
+   
+}
+@keyframes moveX{
+    0%{
+     margin-left: -15px;
+    }
+    25%{
+     margin-left: 0px;
+    }
+    50%{
+     margin-left: -15px;
+    }
+    100%{
+     margin-left: 0px;
+    }
+ }
+
+@keyframes shrink {
+       0%{
+        background-size: 110% 110%;
+       } 
+       100%{
+        background-size: 100% 100%;
+       } 
+}
