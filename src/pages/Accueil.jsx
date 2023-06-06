@@ -58,7 +58,7 @@ const Accueil = () => {
         <section className='sectionaccueil'>
 
             <div className='sectionHeader'>
-                <img onClick={()=>console.log(screenSize)} className="imgaccueil" src={croix} alt='logo' />
+                <img loading='eager' onClick={()=>console.log(screenSize)} className="imgaccueil" src={croix} alt='logo' />
                 <div className="accueilsectionText">Église D'Identification Chrétienne De Gatineau</div>
             </div>
 
@@ -90,7 +90,7 @@ const Accueil = () => {
                     <h2>Notre église chrétienne a vu le jour en 2004.</h2>
                 </aside>
                 <aside>
-                <iframe width={screenSize.height > 768 ? "600" : "360"} height={screenSize.height > 768 ? "500" : "400"} src="https://www.youtube.com/embed/fVc5xnXtJF4" title="Bienvenue à EICG ⛪️🙏🏾" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe loading='lazy' width={screenSize.height > 768 ? "600" : "360"} height={screenSize.height > 768 ? "500" : "400"} src="https://www.youtube.com/embed/fVc5xnXtJF4" title="Bienvenue à EICG ⛪️🙏🏾" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </aside>
             </div>
         </section>
@@ -113,7 +113,7 @@ const Accueil = () => {
                         <div key={item.id}>
                             <h3>{item.title}</h3>
                             <p>{item.txt}</p>
-                            <img  width={300} height={300} src={item.img} alt='desc'/>
+                            <img  width={300} height={300} src={item.img} loading='lazy' alt='desc'/>
                         </div>
                     ))
                 }
@@ -121,7 +121,7 @@ const Accueil = () => {
         </section>
         <section className='section4'>
             <aside>
-                <img src={croix} width={screenSize.height > 768 ? 700 : 300} height={screenSize.height > 768 ? 600 : 300}  alt='logo'/>
+                <img src={croix} width={screenSize.height > 768 ? 700 : 300} height={screenSize.height > 768 ? 600 : 300} loading='lazy'   alt='logo'/>
             </aside>
             <aside className='section4Text' >
                 <h1 className='section4Text1'>Notre église</h1>

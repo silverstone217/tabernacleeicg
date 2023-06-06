@@ -29,7 +29,7 @@ const EnSavoirPlus = () => {
             </div>
           </aside>
           <aside>
-            <img className='plusImg1' src={cross} alt='croix'/>
+            <img className='plusImg1' src={cross} loading='lazy' alt='croix'/>
           </aside>
         </div>
       </section>
@@ -62,7 +62,7 @@ const EnSavoirPlus = () => {
           <p>Elle encourage les fidèles à faire confiance et à être fidèle à Dieu. Rendez-vous à Gatineau, à quelques kilomètres d’Ottawa et de Hull, pour assister à nos cultes évangéliques.</p>
         </aside>
         <aside>
-          <img src={pasteur}  alt='croix'/>
+          <img src={pasteur} loading='lazy'  alt='croix'/>
           <h3>Pasteur Abraham Tshitende Tshibangu</h3>
         </aside>
       </section>

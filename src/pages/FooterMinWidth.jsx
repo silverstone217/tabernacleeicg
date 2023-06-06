@@ -40,9 +40,18 @@ const FooterMinWidth = () => {
                 {
                   open && (
                     <div className='footerOpenplus'>
-                      <div onClick={()=>navigation("/")} className='footerOpenplusdiv1'>Accueil</div>
-                      <div onClick={()=>navigation("/EnSavoirPlus")} className='footerOpenplusdiv1'>En Savoir Plus</div>
-                      <div onClick={()=>navigation("/Contact")} className='footerOpenplusdiv1'>Nous Contacter</div>
+                      <div onClick={()=>{
+                        navigation("/");
+                        setOpen(false);
+                      }} className='footerOpenplusdiv1'>Accueil</div>
+                      <div onClick={()=>{
+                        navigation("/EnSavoirPlus");
+                        setOpen(false);
+                      }} className='footerOpenplusdiv1'>En Savoir Plus</div>
+                      <div onClick={()=>{
+                        navigation("/Contact");
+                        setOpen(false)
+                      }} className='footerOpenplusdiv1'>Nous Contacter</div>
 
                       <h1 >Église d'Identification Chrétienne de Gatineau</h1>
                       <p >69 rue Jean-Proulx suite 202Gatineau, QCJ8Z 1W2</p>
