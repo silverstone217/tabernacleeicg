@@ -289,7 +289,7 @@
 @media screen and (min-width: 768px){
     .accueil{
         position: relative;
-        margin-top: 5%;
+        margin-top: 6%;
         display: flex;
         color: white; 
         align-items: center;
@@ -297,7 +297,7 @@
         scroll-behavior: smooth !important;
         scroll-padding: 20rem;
         overflow-x: hidden;
-        height: 100vh;
+        height: 100%;
         overflow-y: auto;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
@@ -311,6 +311,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        margin-top: 1.7%;
         width: 100%;
         flex-direction: column;
         transition: background-image 1s ease-in-out;

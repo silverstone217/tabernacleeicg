@@ -113,7 +113,7 @@ const Accueil = () => {
                         <div key={item.id}>
                             <h3>{item.title}</h3>
                             <p>{item.txt}</p>
-                            <img  width={300} height={300} src={item.img} loading='lazy' alt='desc'/>
+                            <img  width={300} height={300} src={item.img} loading='eager' alt='desc'/>
                         </div>
                     ))
                 }
@@ -121,7 +121,7 @@ const Accueil = () => {
         </section>
         <section className='section4'>
             <aside>
-                <img src={croix} width={screenSize.height > 768 ? 700 : 300} height={screenSize.height > 768 ? 600 : 300} loading='lazy'   alt='logo'/>
+                <img src={croix} width={screenSize.height > 768 ? 700 : 300} height={screenSize.height > 768 ? 600 : 300} loading='eager'   alt='logo'/>
             </aside>
             <aside className='section4Text' >
                 <h1 className='section4Text1'>Notre église</h1>
