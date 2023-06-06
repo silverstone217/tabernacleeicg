@@ -90,7 +90,7 @@ const Accueil = () => {
                     <h2>Notre église chrétienne a vu le jour en 2004.</h2>
                 </aside>
                 <aside>
-                <iframe loading='lazy' width={screenSize.height > 768 ? "600" : "360"} height={screenSize.height > 768 ? "500" : "400"} src="https://www.youtube.com/embed/fVc5xnXtJF4" title="Bienvenue à EICG ⛪️🙏🏾" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe loading='eager' width={screenSize.width > 768 ? "600" : "370"} height={screenSize.height > 768 ? "500" : "400"} src="https://www.youtube.com/embed/fVc5xnXtJF4" title="Bienvenue à EICG ⛪️🙏🏾" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </aside>
             </div>
         </section>
