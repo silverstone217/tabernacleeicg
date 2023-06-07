@@ -28,7 +28,8 @@
         width: 100%;
         flex-direction: column;
         transition: background-image 1s ;
-        animation: backgroundchange 30s alternate infinite ;
+        animation: backgroundchange 15s alternate infinite ;
+        animation-delay:5s ; 
     }
     .sectionHeader{
         width: 100%;
@@ -317,7 +318,8 @@
         width: 100%;
         flex-direction: column;
         transition: background-image 1s ease-in-out;
-        animation: backgroundchange 30s alternate infinite ;
+        animation: backgroundchange 15s alternate infinite ;
+        animation-delay:5s ;  
     }
     .sectionHeader{
      width: 40%;
@@ -574,12 +576,14 @@
 }
 
 @keyframes backgroundchange{
+   
     0%, 33.33%{
         background-image: url('../../images/cross\ 3.jpg');
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
         object-fit: cover;
+        
     }
     33.34%, 66.66%{
         background-image: url('../../images/eagle3.jpg');
@@ -593,8 +597,7 @@
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
-        object-fit: cover;
-        
+        object-fit: cover; 
     }
 }
 
