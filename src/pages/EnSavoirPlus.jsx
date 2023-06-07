@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from './Footer';
-import cross from '../images/cross.jpg';
-import Christ from '../images/bible.jpg';
+import cross from '../images/cross 3.jpg';
+import Christ from '../images/eagle3.jpg';
 import pasteur from '../images/pasteur.jpeg';
 
 

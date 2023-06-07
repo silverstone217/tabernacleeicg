@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import croix from '../images/croixIcon.png'
 import { MdLocationOn } from 'react-icons/md';
-import eagle from '../images/eagle.jpg';
-import hands from '../images/holyhands.jpg';
-import cross from '../images/cross.jpg';
+import eagle from '../images/eagle3.jpg';
+import bible from '../images/hands2.jpg';
+import cross from '../images/cross 3.jpg';
 import Footer from './Footer';
 
 
@@ -11,7 +11,7 @@ import Footer from './Footer';
 const listImages =[
     {
         id : 1,
-        img: hands,
+        img: bible,
         txt:"Nous sommes à l’écoute pour mieux orienter les prières.",
         title:"Écoute",
     },

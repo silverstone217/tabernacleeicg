@@ -17,7 +17,7 @@
     }
     .sectionaccueil{
         background-color: gainsboro;
-        background-image: url('../../images/Christ1.jpg');
+        background-image: url('../../images/cross\ 3.jpg');
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
@@ -71,7 +71,8 @@
     .accueilsectionText3{
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 15px;
+        word-wrap: break-word;
         margin-bottom: 5px;
         font-weight: 400;
         align-items: center;
@@ -289,7 +290,7 @@
 @media screen and (min-width: 768px){
     .accueil{
         position: relative;
-        margin-top: 6%;
+        margin-top: 4%;
         display: flex;
         color: white; 
         align-items: center;
@@ -303,7 +304,8 @@
     }
     .sectionaccueil{
         background-color: gainsboro;
-        background-image: url('../../images/Christ1.jpg');
+        background-image: url('../../images/cross\ 3.jpg');
+        object-fit: cover;
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
@@ -573,22 +575,26 @@
 
 @keyframes backgroundchange{
     0%, 33.33%{
-        background-image: url('../../images/Christ1.jpg');
+        background-image: url('../../images/cross\ 3.jpg');
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
+        object-fit: cover;
     }
     33.34%, 66.66%{
-        background-image: url('../../images/bible.jpg');
+        background-image: url('../../images/eagle3.jpg');
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
+        object-fit: cover;
     }
     66.67%,100%{
-        background-image: url('../../images/eagle.jpg');
+        background-image: url('../../images/hands2.jpg');
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
+        object-fit: cover;
+        
     }
 }
 

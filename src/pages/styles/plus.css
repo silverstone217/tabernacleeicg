@@ -25,7 +25,7 @@
         color: white;
         font-size: 37px;
         background-color: gainsboro;
-        background-image: url('../../images/Christ1.jpg');
+        background-image: url('../../images/bible\ 2.jpg');
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
@@ -210,7 +210,7 @@
         color: white;
         font-size: 25px;
         background-color: gainsboro;
-        background-image: url('../../images/Christ1.jpg');
+        background-image: url('../../images/bible\ 2.jpg');
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
@@ -359,7 +359,7 @@
 
 @keyframes backgroundchange{
     0%, 33.33%{
-        background-image: url('../../images/Christ1.jpg');
+        background-image: url('../../images/eagle3.jpg');
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
@@ -367,7 +367,7 @@
         animation:shrink 5s alternate infinite ;
     }
     33.34%, 66.66%{
-        background-image: url('../../images/bible.jpg');
+        background-image: url('../../images/hands2.jpg');
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
@@ -375,7 +375,7 @@
         animation:shrink 5s alternate infinite ;
     }
     66.67%,100%{
-        background-image: url('../../images/eagle.jpg');
+        background-image: url('../../images/cross\ 3.jpg');
         background-position: center;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
