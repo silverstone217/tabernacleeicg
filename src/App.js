@@ -2,6 +2,7 @@ import React,{useEffect, useState} from 'react';
 import './App.css';
 import './pages/styles/styles.css';
 import './pages/styles/plus.css';
+import './pages/styles/contact.css';
 import Accueil from './pages/Accueil';
 import Contact from './pages/Contact';
 import EnSavoirPlus from './pages/EnSavoirPlus';

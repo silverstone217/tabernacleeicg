@@ -5,6 +5,7 @@ import eagle from '../images/eagle3.jpg';
 import bible from '../images/hands2.jpg';
 import cross from '../images/cross 3.jpg';
 import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -36,6 +37,7 @@ const Accueil = () => {
         width: window.innerWidth,
         height: window.innerHeight
       });
+      const navigate = useNavigate();
     
       useEffect(() => {
         function handleResize() {
@@ -104,7 +106,7 @@ const Accueil = () => {
 
                 <div className="sectionaccueils2s">
                     <h3 className="accueilsectionText3">MISSION ÉVANGÉLIQUE ET INTERDÉNOMINATIONNEL. DEMANDEZ PLUS DE DÉTAILS SUR NOTRE ÉGLISE !</h3>
-                    <div className="sectionaccueilbtn">NOUS CONTACTER</div>
+                    <div onClick={()=>navigate("/Contact")} className="sectionaccueilbtn">NOUS CONTACTER</div>
                 </div>
             </div>
             <div className="sectionaccueils3" >

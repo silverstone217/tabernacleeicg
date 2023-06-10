@@ -5,7 +5,7 @@
         height: 80%;
         margin-top: 10%;
         margin-bottom: 10%;
-        font-size: 16px;
+        font-size: 14px;
         display: flex;
         color: black; 
         display: flex;
@@ -52,7 +52,7 @@
     }
     .accueilsectionText{
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         margin-top: -5px;
         font-weight: 400;
         word-wrap: break-word;    
@@ -72,7 +72,7 @@
     .accueilsectionText3{
         display: flex;
         justify-content: center;
-        font-size: 15px;
+        font-size: 14px;
         word-wrap: break-word;
         margin-bottom: 5px;
         font-weight: 400;
@@ -88,7 +88,7 @@
         justify-content: center;
     }
     .accueilsectionText4{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         border: 1px solid white;
         border-radius: 20px;
@@ -151,7 +151,7 @@
     .accueilsectionTexts3{
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 5px;
         font-weight: 400;
         text-align: start;
@@ -266,12 +266,12 @@
         margin-bottom: -2rem;
     }
     .section4 >.section4Text>.section4Text2{
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 1rem;
         margin-top: 2rem;
     }
     .section4 >.section4Text>.section4Text3{
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 2rem;
     }
     .section4 >.section4Text>.section4Text4{

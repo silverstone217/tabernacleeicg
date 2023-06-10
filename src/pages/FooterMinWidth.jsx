@@ -24,7 +24,9 @@ const FooterMinWidth = () => {
                     <BiMenuAltLeft size={30} color='black'/>
                     <p>Menu</p>
                   </div>
-                  <div>
+                  <div onClick={()=>{
+                        navigation("/Contact");
+                      }}>
                     <FaRegEnvelope size={30} color='black'/>
                     <p>Contact</p>
                   </div>
